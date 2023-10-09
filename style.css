@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+
+}
+.card *{
+    font-family: 'Poppins',sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+.card{
+    background-color: white;
+    width: 320px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #cccccc;
+}
+.card::before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 120px;
+    background-color: var(--theme-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    top:-5px ;
+    transition: all 0.5s ease-in-out;
+
+}
+.card-prof{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 10;
+    margin-top: 40px;
+    border: 8px solid white;
+}
+
+.card-username{
+    margin-top: 10px;
+    color: var(--theme-color);
+}
+.username-jobTitle{
+    opacity: 0.5;
+}
+.prof-data{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.left-card{
+}
+.follower-status-title{
+    color: var(--theme-color);
+}
+.follower-status{
+}
+.right-card{
+}
+.following-status-title{
+    color: var(--theme-color);
+}
+.following-status{
+}
+.card-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+.card-button{
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    width: 130px;
+    padding: 8px 0;
+    border: none;
+    font-weight:600;
+}
+.follow-btn{
+    background-color: var(--theme-color);
+    color: white;
+}
+.unfollow-btn{
+    border: 2px solid var(--theme-color) ;
+    color: var(--theme-color);
+    transition: all 0.5s ease-in-out;
+}
+.unfollow-btn:hover{
+    background-color: var(--theme-color);
+    color: white;
+}
+.color-box{
+    background-color: white;
+    box-shadow: 0 0 8px #cccccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.color-btn{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: var(--theme-color);
+}
+:root{
+    --theme-color : #8c00ff;
+}
+.color1{
+    background-color: #ff032d;
+}
+.color2{
+    background-color: #ff03c0;
+}
+.color3{
+    background-color: #cd03ff;
+}
+.color4{
+    background-color: #ffa703;
+}
+.color5{
+    background-color: #03eeff;
+}
+.color6{
+    background-color: #03ff3a;
+}
+
+
+
+
+
+
